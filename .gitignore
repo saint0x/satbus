@@ -1,0 +1,64 @@
+# Rust
+/target/
+**/*.rs.bk
+*.pdb
+
+# Cargo
+Cargo.lock
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Logs
+*.log
+server.log
+
+# Temporary files
+*.tmp
+*.temp
+
+# Test artifacts
+*.profraw
+*.gcda
+*.gcno
+
+# Build artifacts
+dist/
+build/
+
+# Documentation build
+book/
+
+# Local configuration
+.env
+.env.local
+
+# Coverage reports
+coverage/
+*.lcov
+
+# Flamegraph
+flamegraph.svg
+perf.data*
+
+# Benchmarks
+criterion/
+
+# RLS
+**/*.rs.bk
+
+# IDE-specific
+.vscode/settings.json

@@ -1,0 +1,47 @@
+[package]
+name = "satbus"
+version = "0.1.0"
+edition = "2021"
+description = "A production-ready satellite bus simulator with TCP networking and comprehensive system modeling"
+authors = ["Space Systems Engineering Team"]
+license = "MIT"
+repository = "https://github.com/example/satbus"
+keywords = ["satellite", "aerospace", "simulation", "tcp", "systems"]
+categories = ["simulation", "command-line-utilities"]
+
+[[bin]]
+name = "satbus"
+path = "src/bin/satbus.rs"
+
+[[bin]]
+name = "satbus-simulator"
+path = "src/bin/simulator.rs"
+
+[[bin]]
+name = "test-telemetry-size"
+path = "src/bin/test_telemetry_size.rs"
+
+[dependencies]
+heapless = "0.8"
+arrayvec = "0.7"
+serde = { version = "1.0", features = ["derive"] }
+serde_bytes = "0.11"
+serde_json = "1.0"
+tokio = { version = "1.0", features = ["full"] }
+tracing = "0.1"
+tracing-subscriber = "0.3"
+nb = "1.0"
+cortex-m = "0.7"
+thiserror = "1.0"
+static_assertions = "1.1"
+clap = "2.34"
+colored = "2.0"
+
+[profile.release]
+lto = true
+codegen-units = 1
+panic = "abort"
+strip = true
+
+[profile.dev]
+panic = "abort"
