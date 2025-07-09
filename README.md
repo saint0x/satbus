@@ -122,7 +122,7 @@ satbus system reboot --confirm        # System reboot
 
 ## Documentation
 
-- **[API Reference](API_REFERENCE.md)**: Complete API documentation with examples
+- **[API Reference](/docs/API_REFERENCE.md)**: Complete API documentation with examples
 - **Inline Documentation**: Comprehensive rustdoc comments throughout codebase
 - **Test Examples**: Extensive test suite demonstrating all features
 
