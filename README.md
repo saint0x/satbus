@@ -49,6 +49,14 @@ cargo test  # Run comprehensive test suite (85+ tests)
 export PATH="$PATH:/path/to/satbus/target/release"
 ```
 
+## Screenshots
+
+![Live server telemetry](assets/1.png)
+*Live server telemetry*
+
+![A few of the CLI command functionality](assets/2.png)
+*A few of the CLI command functionality*
+
 ## Usage
 
 ### Library API
